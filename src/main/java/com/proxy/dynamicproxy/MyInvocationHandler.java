@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 
 public class MyInvocationHandler implements InvocationHandler {
 
+    //目标对象
     private Object target;
 
     public MyInvocationHandler(Object target) {
@@ -22,7 +23,8 @@ public class MyInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-//        System.out.println("method："+method.getName()+"，args："+args[0]);
+        System.out.println("method："+method.getName()+"，args："+args[0]);
+        //method：say，args：余声
         System.out.println("获取连接");
 
         //通知 目标对象

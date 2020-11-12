@@ -10,7 +10,7 @@ public class ProxyClass {
         String className = "$Proxy0";
         byte[] classFile = ProxyGenerator.generateProxyClass(className,new Class[] {clazz});
 
-        String path="D:\\AutomationProject\\springboot\\javaproxy\\src\\main\\java\\com\\proxy\\util";
+        String path="D:\\javaCode\\21_ProjectStorageFolder\\TestNG\\javaproxy\\src\\main\\java\\com\\proxy\\util";
 
         FileOutputStream outputStream =new FileOutputStream(path+className+".class");
         outputStream.write(classFile);
